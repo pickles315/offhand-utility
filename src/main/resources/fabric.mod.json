@@ -3,7 +3,7 @@
   "id": "offhand_utility",
   "version": "${version}",
   "name": "Offhand Utility",
-  "description": "Automatically uses a suitable offhand tool when your main-hand item is unsuitable.",
+  "description": "Uses suitable offhand tools for mining and an offhand sword for attacks when the main hand is not holding a sword.",
   "authors": ["pickles315"],
   "environment": "*",
   "entrypoints": {
