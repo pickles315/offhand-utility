@@ -9,6 +9,15 @@ public final class OffhandToolHelper {
     private OffhandToolHelper() {
     }
 
+    public static boolean shouldUseOffhandForAttack(Player player) {
+        ItemStack mainHand = player.getMainHandItem();
+        ItemStack offHand = player.getOffhandItem();
+
+        return !offHand.isEmpty()
+                && offHand.getItem() instanceof net.minecraft.world.item.SwordItem
+                && !(mainHand.getItem() instanceof net.minecraft.world.item.SwordItem);
+    }
+
     public static boolean shouldUseOffhand(Player player, BlockState state) {
         ItemStack mainHand = player.getMainHandItem();
         ItemStack offHand = player.getOffhandItem();
