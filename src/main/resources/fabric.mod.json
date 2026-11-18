@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "offhand_utility",
+  "version": "${version}",
+  "name": "Offhand Utility",
+  "description": "Automatically uses a suitable offhand tool when your main-hand item is unsuitable.",
+  "authors": ["pickles315"],
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.offhandutility.OffhandUtility"]
+  },
+  "mixins": [
+    "offhand_utility.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
