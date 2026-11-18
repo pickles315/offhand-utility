@@ -2,7 +2,10 @@
 
 Offhand Utility is a Fabric mod for Minecraft Java Edition 26.2.
 
-When the item in your main hand is not an effective tool for a block, the mod can use a better tool from your offhand for mining speed, tool checks, drops, and durability. Your inventory slots are not swapped.
+When your main hand holds something other than a suitable tool, the mod can use a suitable item from your offhand without swapping inventory slots:
+
+- **Mining:** uses an effective pickaxe, axe, or shovel from the offhand for mining speed, correct-tool checks, drops, and durability.
+- **Attacking:** uses an offhand sword for attacks when your main hand is not holding a sword.
 
 ## Build
 
@@ -16,13 +19,10 @@ GitHub Actions builds the mod automatically when commits are pushed to `main`, w
 ## Requirements
 
 - Minecraft Java Edition 26.2
-- Fabric Loader 0.19.3 or newer
+- Fabric Loader 0.20.1 or newer
 - Fabric API for Minecraft 26.2
 - Java 25
 
-## Current implementation
+## Notes
 
-The first release focuses on block mining. It chooses the offhand when it is the correct tool for blocks that require one, or when it has a higher block-breaking speed for blocks that do not require a specific tool. It keeps the items in their original slots.
-
-This is an early build. It still needs an in-game check for the offhand swing animation, adventure-mode restrictions, and compatibility with other mods.
-
+The mod keeps items in their original inventory slots. The offhand sword feature changes which stack is used for the player's attack calculations and item durability; the offhand swing animation and compatibility with other combat mods still need in-game verification.
